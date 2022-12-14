@@ -1,7 +1,7 @@
 import styles from "./SideNav.module.css";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import TeamBlock from "./TeamBlock";
+import TeamBlock from "./SideNav/TeamBlock";
 import { AiFillStar } from "react-icons/ai";
 
 const Accordion = ({

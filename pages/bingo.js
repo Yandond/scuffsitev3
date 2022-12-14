@@ -2,7 +2,7 @@ import styles from "../styles/Bingo.module.scss";
 import { useState } from "react";
 import { database, app } from "../firebase/clientApp";
 import { getDatabase, ref, child, get } from "firebase/database";
-import SideNav from "../components/SideNav/Sidenav";
+import SideNav from "../components/SideNav";
 import Board from "../components/Board/Board";
 
 export default function Bingo(props) {
