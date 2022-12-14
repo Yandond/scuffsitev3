@@ -1,0 +1,172 @@
+.loginForm {
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.loginBox {
+	margin-top: 75px;
+	height: auto;
+	background: #1a2226;
+	text-align: center;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 3px;
+}
+
+.loginKey {
+	height: 100px;
+	font-size: 80px;
+	line-height: 100px;
+}
+
+.loginTitle {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-top: 15px;
+	font-weight: bold;
+	color: #ecf0f5;
+}
+
+.loginForm {
+	margin-top: 25px;
+	text-align: left;
+}
+
+.formGroup input[type="text"] {
+	background-color: #1a2226;
+	border: none;
+	border-bottom: 2px solid #0db8de;
+	border-top: 0px;
+	border-radius: 0px;
+	font-weight: bold;
+	outline: 0;
+	margin-bottom: 20px;
+	padding-left: 0px;
+	color: #ecf0f5;
+}
+
+.formGroup input[type="password"] {
+	background-color: #1a2226;
+	border: none;
+	border-bottom: 2px solid #0db8de;
+	border-top: 0px;
+	border-radius: 0px;
+	font-weight: bold;
+	outline: 0;
+	padding-left: 0px;
+	margin-bottom: 20px;
+	color: #ecf0f5;
+}
+
+.formGroup input:focus {
+	outline: none;
+	box-shadow: 0 0 0;
+}
+
+.formGroup label {
+	margin-bottom: 0px;
+}
+
+.formGroup {
+	margin-bottom: 0px;
+	outline: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.formControl {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.25;
+	color: #495057;
+	background-color: #fff;
+	background-image: none;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 0.25rem;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.formControl:focus {
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-bottom: 2px solid #0db8de;
+	outline: 0;
+	background-color: #1a2226;
+	color: #ecf0f5;
+}
+
+.formControlLabel {
+	font-size: 10px;
+	color: #6c6c6c;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.btnOutlinePrimary {
+	border: #0db8de solid 1px !important;
+	color: #0db8de;
+	border-radius: 0px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	/* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+	background-color: transparent;
+}
+
+.btnOutlinePrimary:hover {
+	background-color: #0db8de;
+	right: 0px;
+}
+
+.btnOutlinePrimary:hover {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff !important;
+	cursor: pointer;
+}
+
+.buttonThing {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #0db8de;
+	padding: 0.5rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.25;
+	border-radius: 0.25rem;
+	transition: all 0.15s ease-in-out;
+}
+
+.loginBtm {
+	float: right;
+}
+
+.loginButton {
+	padding-right: 0px;
+	text-align: right;
+	margin-top: 25px;
+}
+
+.loginText {
+	text-align: left;
+	padding-left: 0px;
+	color: #a2a4a4;
+}
+
+.loginBottom {
+	padding: 0px;
+}

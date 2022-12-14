@@ -1,0 +1,15 @@
+.bingoWrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 15fr 85fr;
+}
+
+.bingoWrapperNav {
+	height: 100%;
+	width: 15vw;
+	background: #1f1f23;
+}
+
+

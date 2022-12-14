@@ -1,0 +1,226 @@
+.adminWrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.adminContainer {
+	background: #000;
+	text-align: center;
+	min-width: 700px;
+	min-height: 500px;
+	padding: 48px;
+	border-radius: 6px;
+}
+.adminTitle {
+	font-size: 48px;
+	font-weight: bold;
+	padding: 16px;
+}
+.currentTeam {
+	max-width: 500px;
+	padding: 16px;
+	padding-bottom: 0;
+	font-size: 16px;
+	font-weight: 500;
+	min-height: 58px;
+	margin: 0 auto;
+}
+.teamSelectionContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+.selectLabel {
+	font-weight: bold;
+	text-align: center;
+	padding: 8px;
+}
+
+.teamLabel {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	max-width: 400px;
+	min-width: 180px;
+	margin: 0 auto;
+	border: 1px solid #334055;
+	background-color: #566b8d;
+	z-index: 10;
+}
+
+.teamLabel select {
+	border: none;
+	outline: none;
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+	padding: 12px 55px 15px 15px;
+	font-size: 14px;
+	color: #000000;
+}
+
+.teamLabel:after {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 100%;
+	line-height: 38px;
+	content: "∨";
+	text-align: center;
+	color: #334055;
+	font-size: 24px;
+	border-left: 1px solid #334055;
+	z-index: -1;
+}
+
+.boardSelectionContainer {
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.boardSelector {
+	background-color: #fff;
+	border: 0 solid #e2e8f0;
+	border-radius: 1.5rem;
+	box-sizing: border-box;
+	color: #0d172a;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.1rem;
+	font-weight: 600;
+	line-height: 1;
+	padding: 1rem 1.6rem;
+	text-align: center;
+	text-decoration: none #0d172a solid;
+	text-decoration-thickness: auto;
+	transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.boardSelector:hover {
+	background-color: #1e293b;
+	color: #fff;
+}
+
+.tileSelector {
+	margin-top: 24px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 2px;
+	column-gap: 2px;
+	width: 250px;
+	height: 250px;
+}
+
+.tile {
+	color: black;
+	cursor: pointer;
+	background: #3f5a76;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.tileComplete {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	font-size: 128px;
+	color: #0ce23abe;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.updateBtn {
+	margin-top: 24px;
+	background-color: #568d73;
+	padding: 16px 32px;
+}
+
+.active {
+	background-color: #566b8d;
+}
+
+.updateBoardWrapper {
+	display: none;
+}
+
+.tabs {
+	width: 100%;
+	height: 64px;
+	position: relative;
+	display: flex;
+}
+
+.tab {
+	color: black;
+	width: 50%;
+	background-color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+.tab:hover {
+	background-color: #1e293b;
+	color: white;
+	transition: cubic-bezier(1, 0, 0, 1) all 0.2s;
+}
+
+.tab:first-child {
+	border-right: #334055 1px solid;
+}
+
+.activeTab {
+	background-color: #566b8d;
+}
+
+.eventsWrapper {
+	display: none;
+}
+
+.containerThing {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.logoutBtn {
+	margin-left: 16px;
+}

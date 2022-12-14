@@ -1,0 +1,84 @@
+.contentPlaceholder {
+	transform-origin: top center;
+}
+
+.playerTab {
+	font-size: 16px;
+	color: white;
+	border-bottom: 2px solid #572929;
+	transform-origin: top center;
+	padding: 5px;
+	user-select: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.teamBanner {
+	width: 15vw;
+	height: 8.4vw;
+	display: inline-block;
+	position: relative;
+}
+
+.leaderIcon {
+	color: #ffd700;
+	margin-right: 7px;
+}
+
+.playerMedals {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.goldMedal {
+	color: #ffd700;
+}
+
+.bronzeMedal {
+	color: #cd7f32;
+}
+
+.silverMedal {
+	color: #c0c0c0;
+}
+
+.medal {
+	margin-right: 3px;
+	display: flex;
+	align-items: center;
+}
+
+.noMedals {
+	display: none;
+}
+
+@media only screen and (max-width: 783px) {
+	.medal {
+		display: none;
+	}
+	.noMedals {
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: 1662px) {
+	.teamBanner {
+		width: 20vw;
+		height: 10vw;
+	}
+}
+@media only screen and (max-width: 1330px) {
+	.teamBanner {
+		width: 25vw;
+		height: 12.5vw;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.teamBanner {
+		width: 30vw;
+		height: 15vw;
+	}
+}
