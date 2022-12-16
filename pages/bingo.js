@@ -14,7 +14,7 @@ export default function Bingo(props) {
 				<SideNav
 					props={props.teams.teams}
 					setSelectedTeam={setSelectedTeam}
-					w
+					points={props.points}
 				></SideNav>
 			</div>
 			<div className={styles.bingoWrapperMain}>
@@ -32,11 +32,6 @@ export async function getServerSideProps() {
 		.then((snapshot) => {
 			if (snapshot.exists()) {
 				teams = snapshot.val();
-				Object.keys(teams).forEach((team) => {
-					if (teams[team].board1Complete === false) {
-						delete teams[team].board2;
-					}
-				});
 			} else {
 				console.log("No data available please contact site administrator");
 			}
@@ -44,9 +39,23 @@ export async function getServerSideProps() {
 		.catch((error) => {
 			console.error(error);
 		});
+	let points = {};
+	await get(child(dbRef, `points`))
+		.then((snapshot) => {
+			if (snapshot.exists()) {
+				points = snapshot.val();
+			} else {
+				console.log("No data available please contact site administrator");
+			}
+		})
+		.catch((error) => {
+			console.error(error);
+		});
+
 	return {
 		props: {
 			teams,
+			points,
 		},
 	};
 }

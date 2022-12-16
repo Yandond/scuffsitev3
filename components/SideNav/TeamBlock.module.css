@@ -82,3 +82,11 @@
 		height: 15vw;
 	}
 }
+.pointsTab {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 24px;
+	font-weight: bold;
+}

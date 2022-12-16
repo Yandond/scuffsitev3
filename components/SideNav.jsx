@@ -14,6 +14,7 @@ const Accordion = ({
 	participants,
 	shopPoints,
 	setSelectedTeam,
+	points,
 }) => {
 	const isOpen = i === expanded;
 
@@ -50,9 +51,10 @@ const Accordion = ({
 						transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
 					>
 						<TeamBlock
-							team={team}
+							team={closedName}
 							participants={participants}
 							flag={closedName}
+							points={points}
 						></TeamBlock>
 					</motion.section>
 				)}
@@ -61,7 +63,7 @@ const Accordion = ({
 	);
 };
 
-export default function SideNav({ props, setSelectedTeam }) {
+export default function SideNav({ props, setSelectedTeam, points }) {
 	// This approach is if you only want max one section open at a time. If you want multiple
 	// sections to potentially be open simultaneously, they can all be given their own `useState`.
 	const [expanded, setExpanded] = useState(0);
@@ -79,6 +81,7 @@ export default function SideNav({ props, setSelectedTeam }) {
 			expanded={expanded}
 			setSelectedTeam={setSelectedTeam}
 			setExpanded={setExpanded}
+			points={points}
 		/>
 	));
 }
