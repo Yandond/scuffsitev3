@@ -13,7 +13,7 @@ export default function Home() {
 					name="description"
 					content="Welcome to the home of Scuff Unit. Oldschool Runescape's greatest clan"
 				/>
-				<link rel="icon" href="/favicon-32x32.ico"></link>
+				
 
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content="Scuff Unit" />
@@ -39,7 +39,7 @@ export default function Home() {
 				/>
 			</Head>
 			<div className={styles.home}>
-				<h1>Welcome to the Scuff Winter Bingo of 2022</h1>
+				<Image src={"/images/webpage.png"} layout="fill"></Image>
 			</div>
 		</div>
 	);

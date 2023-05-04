@@ -19,7 +19,6 @@ Router.onRouteChangeError = () => {
 };
 
 export default function Layout({ children }) {
-	
 	return (
 		<>
 			<Head>
@@ -31,6 +30,7 @@ export default function Layout({ children }) {
 					httpEquiv="ScreenOrientation"
 					content="autoRotate:disabled"
 				></meta>
+				<link rel="icon" href="/images/icon.png"></link>
 			</Head>
 			<Navbar />
 			<main

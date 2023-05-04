@@ -1,11 +1,7 @@
 .mainContainer {
 	min-height: calc(100vh - 55px) !important;
 	height: calc(100vh - 55px) !important;
-	background: radial-gradient(
-		ellipse at center bottom,
-		#912217 21%,
-		#0c1116 67%
-	) !important;
+
 	position: relative;
 	overflow: hidden;
 }
